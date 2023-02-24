@@ -95,6 +95,25 @@ img {
   }
 }
 
+@keyframes frontEndAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-465px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes zoom {
   0% {
     transform: scale(1);
@@ -105,6 +124,26 @@ img {
   100% {
     transform: scale(1);
   }
+}
+
+.zoom {
+  animation: zoom 7s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.animateFloating {
+  animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes rotation {

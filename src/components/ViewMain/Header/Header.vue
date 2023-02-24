@@ -17,11 +17,13 @@
             <ph-arrows-clockwise :size="20" weight="bold" />
           </Button>
         </div>
-        <img
-          ref="avatarRef"
-          class="avatar-img rotation"
-          :src="getImage(avatar)"
-        />
+        <div class="animateFloating">
+          <img
+            ref="avatarRef"
+            class="avatar-img rotation"
+            :src="getImage(avatar)"
+          />
+        </div>
       </div>
       <div class="color-logo"></div>
       <div class="background-logo"></div>
