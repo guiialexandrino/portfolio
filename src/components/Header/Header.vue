@@ -8,7 +8,11 @@
   <div class="logo-container">
     <div class="logo-info">
       <div class="avatar">
-        <img id="avatar-border" src="../../assets/images/avatar2.png" />
+        <img
+          ref="avatarRef"
+          id="avatar-border"
+          src="../../assets/images/avatar2.png"
+        />
       </div>
       <div class="color-logo"></div>
       <div class="background-logo"></div>
@@ -25,7 +29,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const header = ref(null);
+const avatarRef = ref(null);
 
 onMounted(() => {});
 </script>
