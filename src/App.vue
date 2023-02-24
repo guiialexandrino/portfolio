@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import Header from './components/Header/Header.vue';
+import Header from './components/ViewMain/Header/Header.vue';
 </script>
 
 <style lang="less" src="./assets/style/App.less" />

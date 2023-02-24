@@ -11,7 +11,7 @@
         <img
           ref="avatarRef"
           id="avatar-border"
-          src="../../assets/images/avatar2.png"
+          src="../../../assets/images/avatar2.png"
         />
       </div>
       <div class="color-logo"></div>
