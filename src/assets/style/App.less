@@ -184,18 +184,21 @@ a:hover:after {
 /*Floating for Avatar from Container Avatar*/
 @keyframes floating {
   0% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
-  50% {
-    transform: translateY(-3px);
+  25% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(4px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
 
 .animateFloating {
-  animation: floating 3s ease-in-out infinite;
+  animation: floating 5s ease-in-out infinite;
 }
 
 /*Rotation Entrance for Avatar from Container Avatar*/
