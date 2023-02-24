@@ -6,7 +6,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: () => import('../views/Main/Main.vue'),
+      redirect: { name: 'Projects' },
+    },
+    {
+      path: '/projects',
+      name: 'Projects',
+      component: () => import('../views/Projects/Projects.vue'),
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: () => import('../views/About/About.vue'),
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: () => import('../views/Contact/Contact.vue'),
     },
   ],
 });

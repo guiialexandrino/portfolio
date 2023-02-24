@@ -2,7 +2,11 @@
   <header>
     <div class="nav">
       <div class="logo-header"></div>
-      <div>NAV AQUI2</div>
+      <div class="nav-menu">
+        <router-link to="/projects">Projetos</router-link>
+        <router-link to="/about">Sobre Mim</router-link>
+        <router-link to="/contact">Contato</router-link>
+      </div>
     </div>
   </header>
   <div class="logo-container">
