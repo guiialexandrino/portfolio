@@ -8,7 +8,7 @@
   <div class="logo-container">
     <div class="logo-info">
       <div class="avatar">
-        <img id="avatar-border" src="../../assets/images/avatar.png" />
+        <img id="avatar-border" src="../../assets/images/avatar2.png" />
       </div>
       <div class="color-logo"></div>
       <div class="background-logo"></div>
