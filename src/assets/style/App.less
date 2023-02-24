@@ -45,6 +45,7 @@ h3 {
 body {
   font-family: 'quicksand-regular', Verdana, Tahoma, sans-serif;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 img {
@@ -88,16 +89,42 @@ a:hover:after {
   justify-content: center;
   text-align: center;
   width: 100%;
-  background-color: green;
+  // background-color: green;
 }
 
 .__routeContent {
-  background-color: yellow;
+  position: relative;
   max-width: calc(var(--maxWidth) * 0.95);
   width: 95%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  animation: showContent 1.75s ease-in-out;
+  // background-color: yellow;
+}
+
+.__routeContent::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  box-shadow: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.15);
+  left: 0;
+  top: 6px;
+}
+
+.__routeContent::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  box-shadow: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.15);
+  left: 0;
+  bottom: 0px;
 }
 
 //Animations
+
+/*Menu NAV Header appears*/
 @keyframes menuDown {
   0% {
     transform: translateY(-65px);
@@ -107,6 +134,7 @@ a:hover:after {
   }
 }
 
+/*Container Avatar appears*/
 @keyframes containerDown {
   0% {
     transform: translateY(-465px);
@@ -116,24 +144,7 @@ a:hover:after {
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
+/*Animation for Text from Container Avatar*/
 @keyframes frontEndAppear {
   0% {
     opacity: 0;
@@ -153,6 +164,7 @@ a:hover:after {
   }
 }
 
+/*Zoom Background Container Avatar*/
 @keyframes zoom {
   0% {
     transform: scale(1);
@@ -169,6 +181,7 @@ a:hover:after {
   animation: zoom 7s ease-in-out infinite;
 }
 
+/*Floating for Avatar from Container Avatar*/
 @keyframes floating {
   0% {
     transform: translateX(0px);
@@ -185,6 +198,7 @@ a:hover:after {
   animation: floating 3s ease-in-out infinite;
 }
 
+/*Rotation Entrance for Avatar from Container Avatar*/
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -204,6 +218,7 @@ a:hover:after {
   animation: rotation 2s ease-in-out;
 }
 
+/*HorizontalRotation when handle change Avatar from Container Avatar*/
 @keyframes horizontalRotation {
   0% {
     transform: rotateY(0);
@@ -215,4 +230,60 @@ a:hover:after {
 
 .animateHorizontalRotation {
   animation: horizontalRotation 1.5s;
+}
+
+/*Entrance Content (portfolio) Appears*/
+@keyframes showContent {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  60% {
+    transform: translateX(-40px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Fade*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Fade*/
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// Transição rotas, usando Transition VUE
+
+.v-enter-active {
+  transition: opacity 0.25s ease-in;
+}
+
+.v-leave-active {
+  transition: opacity 0.25s ease-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }

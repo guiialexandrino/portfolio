@@ -2,7 +2,11 @@
   <Header />
   <div class="__routeContainer">
     <div class="__routeContent">
-      <RouterView />
+      <RouterView v-slot="{ Component }">
+        <Transition mode="out-in">
+          <Component :is="Component" />
+        </Transition>
+      </RouterView>
     </div>
   </div>
 </template>
