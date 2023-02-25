@@ -48,6 +48,22 @@
       <div class="span-developer">
         <h1>DEVELOPER</h1>
       </div>
+      <Transition mode="out-in">
+        <div v-if="showMessage" ref="hello" data-after="|" class="span-hello">
+          <div>
+            <ph-messenger-logo :size="14" weight="bold" /> Guilherme
+            {{ isTyping }}:
+          </div>
+          {{ message }}
+          <div class="btnOk">
+            <Button
+              :disabled="isTyping !== 'enviou'"
+              @click="showMessage = false"
+              >Ok, Entendi!</Button
+            >
+          </div>
+        </div>
+      </Transition>
     </div>
   </div>
 
@@ -75,7 +91,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { animation } from '../../../utils/Utils';
 
@@ -89,6 +105,30 @@ const menu = ref(null);
 const menuEffectRef = ref(null);
 const menuAppears = ref(false);
 const menuIsChanging = ref(false);
+
+const hello = ref(null);
+const message = ref('');
+const isTyping = ref('Está digitando');
+const messageToShow =
+  'Olá! Aqui você vai encontrar alguns projetos que realizei e conhecer um pouco sobre minha trajetória como desenvolvedor! :)';
+const showMessage = ref(false);
+
+onMounted(() => {
+  console.log(window);
+  setTimeout(() => {
+    showMessage.value = true;
+    const text = messageToShow.split('');
+    text.forEach((letter, i) => {
+      setTimeout(() => {
+        message.value += letter;
+        if (i === text.length - 1) {
+          isTyping.value = 'enviou';
+          hello.value.setAttribute('data-after', '');
+        }
+      }, 125 * i);
+    });
+  }, 2000);
+});
 
 function getImage(img) {
   return new URL(`../../../assets/images/${img}`, import.meta.url);

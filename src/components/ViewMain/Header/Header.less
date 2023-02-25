@@ -104,6 +104,56 @@ header,
     }
   }
 
+  .span-hello {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    width: 270px;
+    background-color: white;
+    padding: 10px;
+    top: 61%;
+    left: 30%;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.05);
+    transform: scale(0.85);
+    z-index: 4;
+
+    .btnOk {
+      position: absolute;
+      bottom: -50px;
+      right: -20px;
+      transform: scale(0.7);
+    }
+
+    div {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+
+  .span-hello::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 38px solid #fff;
+    right: -10px;
+    top: -25px;
+    transform: rotate(35deg);
+  }
+
+  .span-hello::after {
+    content: attr(data-after);
+    margin-left: 3px;
+    animation: blink 0.8s infinite;
+  }
+
   .color-logo {
     position: absolute;
     background-color: var(--background-color);
@@ -232,6 +282,10 @@ header,
       h1 {
         transform: scale(1.2);
       }
+    }
+
+    .span-hello {
+      display: none;
     }
   }
 }
