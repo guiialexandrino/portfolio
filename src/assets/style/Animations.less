@@ -1,0 +1,193 @@
+//Animations
+
+/*Menu NAV Header appears*/
+@keyframes menuDown {
+  0% {
+    transform: translateY(-65px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*Container Avatar appears*/
+@keyframes containerDown {
+  0% {
+    transform: translateY(-465px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*Animation for Text from Container Avatar*/
+@keyframes frontEndAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-465px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Zoom Background Container Avatar*/
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom {
+  animation: zoom 7s ease-in-out infinite;
+}
+
+/*Floating for Avatar from Container Avatar*/
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animateFloating {
+  animation: floating 5s ease-in-out infinite;
+}
+
+/*Rotation Entrance for Avatar from Container Avatar*/
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotateX(360deg);
+  }
+  85% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rotation {
+  animation: rotation 2s ease-in-out;
+}
+
+/*HorizontalRotation when handle change Avatar from Container Avatar*/
+@keyframes horizontalRotation {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.animateHorizontalRotation {
+  animation: horizontalRotation 1.5s;
+}
+
+/*Entrance Content (portfolio) Appears*/
+@keyframes showContent {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  60% {
+    transform: translateX(-40px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Click menu small devices*/
+@keyframes menuEffectClick {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(200);
+  }
+}
+
+.animateMenuClick {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+  animation: menuEffectClick 1s;
+}
+
+/*Footer Appears*/
+@keyframes footerAppear {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  60% {
+    transform: translateX(40px);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Fade*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Fade*/
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animateFadeOut {
+  animation: fadeOut 0.7s;
+}

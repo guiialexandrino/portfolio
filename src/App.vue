@@ -9,10 +9,12 @@
       </RouterView>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup>
 import Header from './components/ViewMain/Header/Header.vue';
+import Footer from './components/ViewMain/Footer/Footer.vue';
 </script>
 
 <style lang="less" src="./assets/style/App.less" />
