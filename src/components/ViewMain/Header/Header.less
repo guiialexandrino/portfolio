@@ -130,6 +130,33 @@ header,
   }
 }
 
+.showBtnMenu {
+  display: none !important;
+}
+
+@media (max-width: 700px) {
+  .showLinks {
+    display: none;
+  }
+
+  .showBtnMenu {
+    position: relative;
+    display: block !important;
+    z-index: 1;
+
+    .handleMenuEffect {
+      position: absolute;
+      top: 0px;
+      right: -10px;
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      border-radius: 50%;
+      z-index: 2;
+    }
+  }
+}
+
 @media (max-width: 1366px) {
   .logo-info {
     .span-frontend {

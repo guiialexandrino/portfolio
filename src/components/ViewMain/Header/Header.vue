@@ -3,10 +3,20 @@
     <div class="nav">
       <div class="logo-header"></div>
       <div class="nav-menu">
-        <router-link to="/projects">Projetos</router-link>
-        <router-link to="/about">Sobre Mim</router-link>
-        <router-link to="/contact">Contato</router-link>
+        <router-link class="showLinks" to="/projects"> Projetos </router-link>
+        <router-link class="showLinks" to="/about">Sobre Mim</router-link>
+        <router-link class="showLinks" to="/contact">Contato</router-link>
       </div>
+      <span class="showBtnMenu">
+        <div ref="menuEffectRef" class="handleMenuEffect"></div>
+        <Button
+          :circle="true"
+          :disabled="menuIsChanging"
+          @click="handleMenuSmallDevices"
+        >
+          <ph-list :size="20" weight="bold" />
+        </Button>
+      </span>
     </div>
   </header>
   <div class="logo-container">
@@ -47,6 +57,8 @@ import { ref } from 'vue';
 const avatar = ref('avatar2.png');
 const avatarIsChanging = ref(false);
 const avatarRef = ref(null);
+const menuEffectRef = ref(null);
+const menuIsChanging = ref(false);
 
 function handleChangeAvatar() {
   avatarIsChanging.value = true;
@@ -63,6 +75,15 @@ function handleChangeAvatar() {
     avatarRef.value.classList.remove('animateHorizontalRotation');
     avatarIsChanging.value = false;
   }, 1500);
+}
+
+function handleMenuSmallDevices() {
+  menuIsChanging.value = true;
+  menuEffectRef.value.classList.add('animateMenuClick');
+  setTimeout(() => {
+    menuEffectRef.value.classList.remove('animateMenuClick');
+    menuIsChanging.value = false;
+  }, 2000);
 }
 
 function getImage(img) {
