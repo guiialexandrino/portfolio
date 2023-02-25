@@ -134,6 +134,33 @@ header,
   display: none !important;
 }
 
+.menuSmallDevices {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100vh;
+
+  .optMenu {
+    animation: fadeIn 1s;
+
+    .opt-header {
+      height: 60px;
+    }
+
+    .opt-body {
+      height: calc(100vh - 60px);
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .showLinks {
     display: none;

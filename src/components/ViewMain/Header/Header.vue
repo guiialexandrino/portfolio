@@ -49,6 +49,25 @@
       </div>
     </div>
   </div>
+  <!-- SmallDevices Menu  -->
+  <div v-if="menuAppears" class="menuSmallDevices">
+    <div class="optMenu">
+      <div class="opt-header">
+        <Button @click="menuAppears = false">Teste</Button>
+      </div>
+      <div class="opt-body">
+        <h1>
+          <router-link to="/projects"> Projetos </router-link>
+        </h1>
+        <h1>
+          <router-link to="/about">Sobre Mim</router-link>
+        </h1>
+        <h1>
+          <router-link to="/contact">Contato</router-link>
+        </h1>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -59,6 +78,7 @@ const avatarIsChanging = ref(false);
 const avatarRef = ref(null);
 const menuEffectRef = ref(null);
 const menuIsChanging = ref(false);
+const menuAppears = ref(false);
 
 function handleChangeAvatar() {
   avatarIsChanging.value = true;
@@ -78,12 +98,15 @@ function handleChangeAvatar() {
 }
 
 function handleMenuSmallDevices() {
+  menuEffectRef.value.style.display = 'block';
   menuIsChanging.value = true;
   menuEffectRef.value.classList.add('animateMenuClick');
   setTimeout(() => {
     menuEffectRef.value.classList.remove('animateMenuClick');
+    menuEffectRef.value.style.display = 'none';
     menuIsChanging.value = false;
-  }, 2000);
+    menuAppears.value = true;
+  }, 400);
 }
 
 function getImage(img) {
