@@ -59,8 +59,9 @@
             <Button
               :disabled="isTyping !== 'enviou'"
               @click="showMessage = false"
-              >Ok, Entendi!</Button
             >
+              Ok, Entendi!
+            </Button>
           </div>
         </div>
       </Transition>
