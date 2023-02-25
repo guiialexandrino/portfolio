@@ -77,6 +77,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { animation } from '../../../utils/Utils';
 
 const router = useRouter();
 
@@ -96,7 +97,6 @@ function getImage(img) {
 function handleChangeAvatar() {
   avatarIsChanging.value = true;
   avatarRef.value.classList.remove('rotation');
-  avatarRef.value.classList.add('animateHorizontalRotation');
   setTimeout(() => {
     if (avatar.value.includes('2')) {
       avatar.value = 'avatar.png';
@@ -104,22 +104,21 @@ function handleChangeAvatar() {
       avatar.value = 'avatar2.png';
     }
   }, 300);
-  setTimeout(() => {
-    avatarRef.value.classList.remove('animateHorizontalRotation');
+
+  animation(avatarRef.value, 'animateHorizontalRotation', 1500, () => {
     avatarIsChanging.value = false;
-  }, 1500);
+  });
 }
 
 function handleMenuSmallDevices() {
   menuEffectRef.value.style.display = 'block';
   menuIsChanging.value = true;
-  menuEffectRef.value.classList.add('animateMenuClick');
-  setTimeout(() => {
-    menuEffectRef.value.classList.remove('animateMenuClick');
+
+  animation(menuEffectRef.value, 'animateMenuClick', 400, () => {
     menuEffectRef.value.style.display = 'none';
     menuIsChanging.value = false;
     menuAppears.value = true;
-  }, 400);
+  });
 }
 
 function handleChangeRouteSmallDevices(route) {
@@ -128,11 +127,9 @@ function handleChangeRouteSmallDevices(route) {
 }
 
 function closeMenuSmallDevices() {
-  menu.value.classList.add('animateFadeOut');
-  setTimeout(() => {
+  animation(menu.value, 'animateFadeOut', 700, () => {
     menuAppears.value = false;
-    menuEffectRef.value.classList.remove('animateFadeOut');
-  }, 700);
+  });
 }
 </script>
 
