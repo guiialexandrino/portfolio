@@ -10,6 +10,7 @@
       <span class="showBtnMenu">
         <div ref="menuEffectRef" class="handleMenuEffect"></div>
         <Button
+          :outlined="true"
           :circle="true"
           :disabled="menuIsChanging"
           @click="handleMenuSmallDevices"
@@ -49,22 +50,25 @@
       </div>
     </div>
   </div>
+
   <!-- SmallDevices Menu  -->
-  <div v-if="menuAppears" class="menuSmallDevices">
+  <div v-if="menuAppears" class="menuSmallDevices" ref="menu">
     <div class="optMenu">
-      <div class="opt-header">
-        <Button @click="menuAppears = false">Teste</Button>
-      </div>
       <div class="opt-body">
-        <h1>
-          <router-link to="/projects"> Projetos </router-link>
-        </h1>
-        <h1>
-          <router-link to="/about">Sobre Mim</router-link>
-        </h1>
-        <h1>
-          <router-link to="/contact">Contato</router-link>
-        </h1>
+        <div class="opt-body-content">
+          <Button
+            class="closeBtn"
+            :circle="true"
+            :outlined="true"
+            @click="closeMenuSmallDevices"
+          >
+            <ph-x :size="20" weight="bold" />
+          </Button>
+          <img src="../../../assets/images/logo-header.png" />
+          <a @click="handleChangeRouteSmallDevices('Projects')">Projetos</a>
+          <a @click="handleChangeRouteSmallDevices('About')">Sobre Mim</a>
+          <a @click="handleChangeRouteSmallDevices('Contact')">Contato</a>
+        </div>
       </div>
     </div>
   </div>
@@ -72,13 +76,22 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const avatar = ref('avatar2.png');
 const avatarIsChanging = ref(false);
 const avatarRef = ref(null);
+
+const menu = ref(null);
 const menuEffectRef = ref(null);
-const menuIsChanging = ref(false);
 const menuAppears = ref(false);
+const menuIsChanging = ref(false);
+
+function getImage(img) {
+  return new URL(`../../../assets/images/${img}`, import.meta.url);
+}
 
 function handleChangeAvatar() {
   avatarIsChanging.value = true;
@@ -109,8 +122,17 @@ function handleMenuSmallDevices() {
   }, 400);
 }
 
-function getImage(img) {
-  return new URL(`../../../assets/images/${img}`, import.meta.url);
+function handleChangeRouteSmallDevices(route) {
+  router.push({ name: route });
+  closeMenuSmallDevices();
+}
+
+function closeMenuSmallDevices() {
+  menu.value.classList.add('animateFadeOut');
+  setTimeout(() => {
+    menuAppears.value = false;
+    menuEffectRef.value.classList.remove('animateFadeOut');
+  }, 700);
 }
 </script>
 

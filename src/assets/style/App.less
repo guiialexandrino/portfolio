@@ -267,7 +267,7 @@ a:hover:after {
 }
 
 .animateMenuClick {
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: rgba(255, 255, 255, 0.97) !important;
   animation: menuEffectClick 1s;
 }
 
@@ -291,14 +291,18 @@ a:hover:after {
   }
 }
 
+.animateFadeOut {
+  animation: fadeOut 0.7s;
+}
+
 // Transição rotas, usando Transition VUE
 
 .v-enter-active {
-  transition: opacity 0.25s ease-in;
+  transition: opacity 0.35s ease-in;
 }
 
 .v-leave-active {
-  transition: opacity 0.25s ease-out;
+  transition: opacity 0.35s ease-out;
 }
 
 .v-enter-from,
