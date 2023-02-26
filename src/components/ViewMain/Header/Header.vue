@@ -115,7 +115,6 @@ const messageToShow =
 const showMessage = ref(false);
 
 onMounted(() => {
-  console.log(window);
   setTimeout(() => {
     showMessage.value = true;
     const text = messageToShow.split('');

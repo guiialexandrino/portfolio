@@ -1,0 +1,44 @@
+.title {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  transition: all 500ms;
+
+  .project {
+    width: 500px;
+    height: 580px;
+    animation: fadeIn 2s;
+    transition: all 1s;
+
+    img {
+      cursor: pointer;
+      opacity: 0.6;
+      transition: all 500ms;
+      border-radius: 5px;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+
+    h2 {
+      padding-top: 10px;
+    }
+  }
+
+  .project:hover {
+    background-color: rgba(246, 246, 246, 1);
+  }
+}
+
+.projects:hover > :hover {
+  transform: translateY(-15px);
+}
