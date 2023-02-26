@@ -1,0 +1,64 @@
+.project-content {
+  .project-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .info {
+      line-height: 1.4rem;
+      max-width: 1000px;
+
+      #description {
+        margin: 40px 0;
+        transform: scale(1.1);
+      }
+
+      strong {
+        font-size: 1.1rem;
+        padding-right: 8px;
+      }
+    }
+
+    span > a:hover:after {
+      background-color: transparent !important;
+    }
+  }
+
+  .project-photos {
+    .show-photo {
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .img-desc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      gap: 5px;
+      background-color: rgba(246, 246, 246, 1);
+    }
+
+    img {
+      transition: all 500ms;
+    }
+
+    img:hover {
+      // opacity: 0.7;
+      // cursor: pointer;
+    }
+
+    .zoom {
+      padding: 5px;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      position: absolute;
+      z-index: 30;
+      bottom: 80px;
+      right: 40px;
+      transform: scale(2) !important;
+    }
+  }
+}
