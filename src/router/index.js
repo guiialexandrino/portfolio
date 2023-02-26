@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import projectsName from '../views/Projects/Projects.json';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,6 +13,21 @@ const router = createRouter({
       path: '/projects',
       name: 'Projects',
       component: () => import('../views/Projects/Projects.vue'),
+      children: [
+        {
+          path: ':name',
+          component: () => import('../views/Projects/ProjectTemplate.vue'),
+          beforeEnter: (to, from, next) => {
+            const projectRoute = to.params.name;
+            const checkRoute = projectsName.find(
+              (item) => item.project === projectRoute
+            );
+
+            if (checkRoute) next();
+            else next({ name: 'Projects' });
+          },
+        },
+      ],
     },
     {
       path: '/about',

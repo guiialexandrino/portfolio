@@ -2,6 +2,14 @@
   text-align: left;
   font-size: 1.2rem;
   margin-bottom: 50px;
+
+  h2 > span {
+    cursor: pointer;
+  }
+
+  h2 > span:hover {
+    text-decoration: underline;
+  }
 }
 
 .projects {
@@ -17,6 +25,7 @@
     height: 580px;
     animation: fadeIn 2s;
     transition: all 1s;
+    border-radius: 5px;
 
     img {
       cursor: pointer;
@@ -36,6 +45,11 @@
 
   .project:hover {
     background-color: rgba(246, 246, 246, 1);
+  }
+
+  .project:hover > img {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 }
 
