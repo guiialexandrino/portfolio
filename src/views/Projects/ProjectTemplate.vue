@@ -13,14 +13,16 @@
         <span v-else>{{ project.preview.notAvailable }}</span>
         <br />
 
-        <strong>Github:</strong>
-        <span v-if="project.github.link">
-          <a :href="project.github.link" target="_blank">
-            {{ project.github.link }}
-          </a>
+        <span v-for="(item, index) in project.github" :key="index">
+          <strong>Github {{ item.label }}:</strong>
+          <span v-if="item.link">
+            <a :href="item.link" target="_blank">
+              {{ item.link }}
+            </a>
+          </span>
+          <span v-else>{{ item.notAvailable }}</span>
+          <br />
         </span>
-        <span v-else>{{ project.github.notAvailable }}</span>
-        <br />
 
         <strong>Stack utilizada:</strong>
         <span v-for="(stack, index) in project.stack" :key="index">

@@ -4,38 +4,62 @@
     "name": "Agenda App",
     "thumb": "AgendaThumb.png",
     "desc": "Frontend + Backend para uma agenda de contatos.",
-    "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status.<br/>O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
+    "fullDesc": "Nesse projeto <b>ataquei de fullstack</b> e criei um backend + frontend para uma aplicação de contatos/agenda, onde é possível realizar o registro de novos usuários, os usuários podem realizar gerenciar seus contatos, realizar upload do seu avatar e pedir recuperação de senha por email.<p>Para <b>desenvolver o backend</b> utilizei a stack: Express, JWT Token (para autenticação), BCript (criptografia), NodeMailer (envio de email), Speakeasy (autenticação dois fatores), JOI (verificação de dados enviados), Multer (upload de arquivos) e Mongoose. Por fim o backend foi colocado para rodar em um servidor da AWS, configurado via Docker.</p><p>Para <b>desenvolver o frontend</b> utilizei VueJS 3, utilizando Composition API. Todo o layout da aplicação foi desenvolvido por mim, optei por não utilizar nenhuma biblioteca externa de interface/css, ou seja, tudo foi feito na mão.</p>",
     "images": [
       {
-        "src": "pokedex/1.png",
-        "desc": "Ao passar o mouse <b>sobre os cards</b> adquirem a cor do elemento primário do pokémon."
+        "src": "agenda/0001.jpg",
+        "desc": "Tela de Login"
       },
       {
-        "src": "pokedex/3.png",
-        "desc": "Ao clicar no card será exibido as informações sobre o pokémon."
+        "src": "agenda/0002.jpg",
+        "desc": "Tela de Cadastro"
       },
       {
-        "src": "pokedex/4.png",
-        "desc": "Exibindo informações sobre o Aerodacytl."
+        "src": "agenda/0003.jpg",
+        "desc": "Tela de esqueceu a senha"
       },
       {
-        "src": "pokedex/2.png",
-        "desc": "É possível adicionar um pokémon para comparar com outro clicando no ícone <b>VS</b>."
+        "src": "agenda/0004.jpg",
+        "desc": "Email recebido para resetar a senha"
       },
       {
-        "src": "pokedex/5.png",
-        "desc": "VsMode entre <b>Aerodactyl x Snorlax</b>"
+        "src": "agenda/0005.jpg",
+        "desc": "Na tela principal, o dog Caramelo pode escolher entre 4 cores de tema"
+      },
+      {
+        "src": "agenda/0006.jpg",
+        "desc": "Caramelo pode gerenciar os seus contatos, como por exemplo: editar"
+      },
+      {
+        "src": "agenda/0007.jpg",
+        "desc": "Caramelo pode fazer a limpa e começar tudo de novo!"
+      },
+      {
+        "src": "agenda/0008.jpg",
+        "desc": "Caramelo pode alterar a sua foto quando quiser!"
+      },
+      {
+        "src": "agenda/0009.jpg",
+        "desc": "E quando os contatos forem muito, ele pode filtrá-los pela busca!"
       }
     ],
     "preview": {
-      "link": "https://apokedex-v2.netlify.app",
+      "link": "https://agenda-app-dev.netlify.app/",
       "notAvailable": ""
     },
-    "github": {
-      "link": "https://github.com/guiialexandrino/pokedexv2",
-      "notAvailable": ""
-    },
-    "stack": ["html", "js", "css"]
+    "github": [
+      {
+        "link": "https://github.com/guiialexandrino/agenda-frontend",
+        "notAvailable": "",
+        "label": "Frontend"
+      },
+      {
+        "link": "https://github.com/guiialexandrino/agenda-backend",
+        "notAvailable": "",
+        "label": "Backend"
+      }
+    ],
+    "stack": ["vue3", "js", "nodejs", "html", "css/less"]
   },
 
   {
@@ -43,7 +67,7 @@
     "name": "Pokédex",
     "thumb": "PokedexThumb.png",
     "desc": "Pokédex dos 151 pokémons + VsMode - compare os pokémons",
-    "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status.<br/>O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
+    "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status. O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
     "images": [
       {
         "src": "pokedex/1.png",
@@ -70,10 +94,13 @@
       "link": "https://apokedex-v2.netlify.app",
       "notAvailable": ""
     },
-    "github": {
-      "link": "https://github.com/guiialexandrino/pokedexv2",
-      "notAvailable": ""
-    },
+    "github": [
+      {
+        "link": "https://github.com/guiialexandrino/pokedexv2",
+        "notAvailable": "",
+        "label": "Frontend"
+      }
+    ],
     "stack": ["html", "js", "css"]
   },
 
@@ -109,10 +136,13 @@
       "link": "https://apokedex-v2.netlify.app",
       "notAvailable": ""
     },
-    "github": {
-      "link": "https://github.com/guiialexandrino/pokedexv2",
-      "notAvailable": ""
-    },
+    "github": [
+      {
+        "link": "https://github.com/guiialexandrino/pokedexv2",
+        "notAvailable": "",
+        "label": "Frontend"
+      }
+    ],
     "stack": ["html", "js", "css"]
   },
 
@@ -148,10 +178,13 @@
       "link": "https://apokedex-v2.netlify.app",
       "notAvailable": ""
     },
-    "github": {
-      "link": "https://github.com/guiialexandrino/pokedexv2",
-      "notAvailable": ""
-    },
+    "github": [
+      {
+        "link": "https://github.com/guiialexandrino/pokedexv2",
+        "notAvailable": "",
+        "label": "Frontend"
+      }
+    ],
     "stack": ["html", "js", "css"]
   },
 
@@ -187,10 +220,13 @@
       "link": "https://apokedex-v2.netlify.app",
       "notAvailable": ""
     },
-    "github": {
-      "link": "https://github.com/guiialexandrino/pokedexv2",
-      "notAvailable": ""
-    },
+    "github": [
+      {
+        "link": "https://github.com/guiialexandrino/pokedexv2",
+        "notAvailable": "",
+        "label": "Frontend"
+      }
+    ],
     "stack": ["html", "js", "css"]
   },
 
@@ -226,10 +262,13 @@
       "link": "https://apokedex-v2.netlify.app",
       "notAvailable": ""
     },
-    "github": {
-      "link": "https://github.com/guiialexandrino/pokedexv2",
-      "notAvailable": ""
-    },
+    "github": [
+      {
+        "link": "https://github.com/guiialexandrino/pokedexv2",
+        "notAvailable": "",
+        "label": "Frontend"
+      }
+    ],
     "stack": ["html", "js", "css"]
   }
 ]
