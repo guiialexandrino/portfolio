@@ -154,24 +154,20 @@
     "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status.<br/>O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
     "images": [
       {
-        "src": "pokedex/1.png",
+        "src": "8puzzle/1.jpg",
         "desc": "Ao passar o mouse <b>sobre os cards</b> adquirem a cor do elemento primário do pokémon."
       },
       {
-        "src": "pokedex/3.png",
+        "src": "8puzzle/3.jpg",
         "desc": "Ao clicar no card será exibido as informações sobre o pokémon."
       },
       {
-        "src": "pokedex/4.png",
+        "src": "8puzzle/4.jpg",
         "desc": "Exibindo informações sobre o Aerodacytl."
       },
       {
-        "src": "pokedex/2.png",
+        "src": "8puzzle/2.jpg",
         "desc": "É possível adicionar um pokémon para comparar com outro clicando no ícone <b>VS</b>."
-      },
-      {
-        "src": "pokedex/5.png",
-        "desc": "VsMode entre <b>Aerodactyl x Snorlax</b>"
       }
     ],
     "preview": {
@@ -193,41 +189,37 @@
     "name": "8-Puzzle",
     "desc": "Um estudo sobre IA com o uso de heurísticas.",
     "thumb": "8puzzleThumb.png",
-    "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status.<br/>O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
+    "fullDesc": "<p>Esse projeto foi realizado durante a faculdade de Sistemas de Informação na disciplina: Sistemas Inteligentes. O intuito dessa aplicação é <b>encontrar a solução para o desafio do jogo conhecido como 8puzzle.</b> Nesse jogo dado um desafio, devemos ir mudando as casas de lugares afim de encontrar a solução.</p><p>Um dos temas abordados durante essa disciplina de faculdade era a Inteligência Artificial. Para esse trabalho deveria ser criado um programa capaz de encontrar os movimentos necessários para resolver o desafio de um 8puzzle. <b>O enunciado pedia que fosse implementado <b>Métodos de Busca</b> utilizando heurísticas, para ajudar o nosso programa a saber qual decisão tomar e por fim encontrar a solução.</b></p><p>Tendo em mente isso desenvolvi essa aplicação utilizando VueJs 2 + Vuetify, toda lógica está direto no frontend mesmo, já que era algo experimental sem necessidade de um backend. <b>Vale salientar que a aplicação tem limitações!</b> Desafios muito complexos demoram muito para ser encontrados e tem que utilizar a heurística <b>melhor A*</b>, pois é a melhor heurística implementada, portanto a que entrega resultados mais rápidos.</p><p>Desafios de até 31 movimentos + Melhor A* conseguem ser resolvidos em alguns minutos! Se o desafio tiver mais movimentos, irá demorar muito para ser encontrado.. :(</p>Relatório explicando o código disponível <a href='https://drive.google.com/file/d/1r_noIobMRFedaCW0IMsS9bqAuLD8rLQV/view?usp=sharing' target='_blank'>aqui</a>.",
     "images": [
       {
-        "src": "pokedex/1.png",
-        "desc": "Ao passar o mouse <b>sobre os cards</b> adquirem a cor do elemento primário do pokémon."
+        "src": "8puzzle/1.jpg",
+        "desc": "É possível escolher <b>entre 3 Heurísticas:</b> Custo Uniforme, A* Heurística Simples e Melhor A*"
       },
       {
-        "src": "pokedex/3.png",
-        "desc": "Ao clicar no card será exibido as informações sobre o pokémon."
+        "src": "8puzzle/2.jpg",
+        "desc": "A aplicação nos entrega a resolução passo-a-passo do desafio."
       },
       {
-        "src": "pokedex/4.png",
-        "desc": "Exibindo informações sobre o Aerodacytl."
+        "src": "8puzzle/3.jpg",
+        "desc": "É possível fazer desafios personalizados."
       },
       {
-        "src": "pokedex/2.png",
-        "desc": "É possível adicionar um pokémon para comparar com outro clicando no ícone <b>VS</b>."
-      },
-      {
-        "src": "pokedex/5.png",
-        "desc": "VsMode entre <b>Aerodactyl x Snorlax</b>"
+        "src": "8puzzle/4.jpg",
+        "desc": "Por exigir muitos cálculos e iterações, dependendo do desafio é necessário aguardar um tempinho."
       }
     ],
     "preview": {
-      "link": "https://apokedex-v2.netlify.app",
+      "link": "https://8puzzle-app.netlify.app",
       "notAvailable": ""
     },
     "github": [
       {
-        "link": "https://github.com/guiialexandrino/pokedexv2",
+        "link": "https://github.com/guiialexandrino/8puzzle",
         "notAvailable": "",
         "label": "Frontend"
       }
     ],
-    "stack": ["html", "js", "css"]
+    "stack": ["vue2", "vuetify"]
   },
 
   {
