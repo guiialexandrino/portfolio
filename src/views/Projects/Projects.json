@@ -1,8 +1,38 @@
 [
-  { "project": "agenda" },
-  { "project": "pokedex" },
-  { "project": "fcee" },
-  { "project": "pieta" },
-  { "project": "8puzzle" },
-  { "project": "polvo" }
+  {
+    "project": "agenda",
+    "name": "Agenda App",
+    "desc": "Frontend + Backend para uma agenda de contatos.",
+    "thumb": "AgendaThumb.png"
+  },
+  {
+    "project": "pokedex",
+    "name": "Pokédex",
+    "desc": "Pokédex dos 151 pokémons + VsMode - compare os pokémons",
+    "thumb": "PokedexThumb.png"
+  },
+  {
+    "project": "fcee",
+    "name": "FCEE",
+    "desc": "Frontend para um sistema de solicitações dos funcionários.",
+    "thumb": "FceeThumb.png"
+  },
+  {
+    "project": "pieta",
+    "name": "Pieta.tech",
+    "desc": "Frontend para um sistema de venda de painéis de energia solar.",
+    "thumb": "PietaTech.png"
+  },
+  {
+    "project": "8puzzle",
+    "name": "8-Puzzle",
+    "desc": "Um estudo sobre IA com o uso de heurísticas.",
+    "thumb": "8puzzleThumb.png"
+  },
+  {
+    "project": "polvo",
+    "name": "Polvo",
+    "desc": "Frontend para um sistema de alunos e professores da ESAG.",
+    "thumb": "PolvoThumb.png"
+  }
 ]

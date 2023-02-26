@@ -8,9 +8,9 @@
         v-for="(project, index) in projects"
         :key="index"
         class="project"
-        @click="viewProject(project.goTo)"
+        @click="viewProject(project.project)"
       >
-        <img :src="getImage(project.img)" />
+        <img :src="getImage(project.thumb)" />
         <h2>{{ project.name }}</h2>
         <span>{{ project.desc }}</span>
       </div>
@@ -24,6 +24,7 @@
 </template>
 
 <script setup>
+import projects from './Projects.json';
 import { useRoute, useRouter } from 'vue-router';
 import { onMounted, ref, computed, onUpdated } from 'vue';
 
@@ -44,45 +45,6 @@ onUpdated(() => {
 const navLabel = computed(() => {
   return route.params.name ? `${route.params.name}_` : 'exibindo todos_';
 });
-
-const projects = [
-  {
-    img: 'AgendaThumb.png',
-    name: 'Agenda App',
-    desc: 'Frontend + Backend para uma agenda de contatos.',
-    goTo: 'agenda',
-  },
-  {
-    img: 'PokedexThumb.png',
-    name: 'Pokédex',
-    desc: 'Pokédex dos 151 pokémons + VsMode - compare os pokémons!',
-    goTo: 'pokedex',
-  },
-  {
-    img: 'FceeThumb.png',
-    name: 'FCEE',
-    desc: 'Frontend para um sistema de solicitações dos funcionários.',
-    goTo: 'fcee',
-  },
-  {
-    img: 'PietaTech.png',
-    name: 'Pieta.tech',
-    desc: 'Frontend para um sistema de venda de painéis de energia solar.',
-    goTo: 'pieta',
-  },
-  {
-    img: '8puzzleThumb.png',
-    name: '8-Puzzle',
-    desc: 'Um estudo sobre IA com o uso de heurísticas.',
-    goTo: '8puzzle',
-  },
-  {
-    img: 'PolvoThumb.png',
-    name: 'Polvo',
-    desc: 'Frontend para um sistema de alunos e professores da ESAG.',
-    goTo: 'polvo',
-  },
-];
 
 function getImage(img) {
   return new URL(`../../assets/images/projects/${img}`, import.meta.url);
