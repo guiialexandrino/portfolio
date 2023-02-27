@@ -109,7 +109,7 @@
     "name": "FCEE",
     "desc": "Frontend para um sistema de solicitações dos funcionários.",
     "thumb": "FceeThumb.png",
-    "fullDesc": "Realizei o <b>frontend</b> desse projeto solicitado pela <b>Fundação Catarinense de Educação Especial.</b> O Layout foi idealizado por mim, conforme a comunicação visual já existente dentro das outras plataformas/sites da FCEE. A aplicação consiste em um sistema de solicitação de serviços junto a administração e setores dentro da instituição. <p>O objetivo desse sistema é informatizar/agilizar os processos de solicitações dentro da instituição, tendo como diferencial a geração de relatórios sobre as solicitações realizadas. O sistema conta com 9 papéis + administrador global - cada um com suas peculiaridades na forma de visualizar e utilização da plataforma.</p>",
+    "fullDesc": "Realizei o <b>frontend</b> desse projeto solicitado pela <b>Fundação Catarinense de Educação Especial.</b> O Layout foi idealizado por mim, conforme a comunicação visual já existente dentro das outras plataformas/sites da FCEE. A aplicação consiste em um sistema de solicitação de serviços junto a administração e setores dentro da instituição. <p>O objetivo desse sistema é informatizar/agilizar os processos de solicitações dentro da instituição, tendo como diferencial a geração de relatórios sobre as solicitações realizadas. O sistema conta com 9 papéis + administrador global - cada um com suas peculiaridades na forma de visualizar e utilizar a plataforma.</p>",
     "images": [
       {
         "src": "fcee/0001.jpg",
