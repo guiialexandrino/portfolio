@@ -169,39 +169,67 @@
   {
     "project": "pieta",
     "name": "Pieta.tech",
-    "desc": "Frontend para um sistema de venda de painéis de energia solar.",
+    "desc": "Frontend para um CRM de venda de painéis de energia solar.",
     "thumb": "PietaTech.png",
-    "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status.<br/>O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
+    "fullDesc": "Esse projeto foi <b>meu primeiro freela</b>, quando tinha pouco mais de 6 meses de estagiário frontend e VUEJS. Foi um grande desafio, pois eu penava pra fazer qualquer coisa! Fui o responsável por criar o layout e toda estrutura frontend da app, trabalhei nesse projeto durante três meses, entretanto, não cheguei a concluir todo o projeto.<p>O projeto em si se tratava de um <b>CRM (Customer Relationship Management)</b> exclusivo da Pieta.tech, no qual ela fornecia planos de assinatura para Empresas do ramo de energia solar. Essa plataforma contava com um sistema exclusivo de venda, gerenciamento, leads e acompanhamento de produtos relacionados a painéis de energia solar para empresas/revendedores desse ramo.</p>",
     "images": [
       {
-        "src": "8puzzle/1.jpg",
-        "desc": "Ao passar o mouse <b>sobre os cards</b> adquirem a cor do elemento primário do pokémon."
+        "src": "pieta/001.jpg",
+        "desc": "Tela de Login"
       },
       {
-        "src": "8puzzle/3.jpg",
-        "desc": "Ao clicar no card será exibido as informações sobre o pokémon."
+        "src": "pieta/002.jpg",
+        "desc": "Tela de Cadastro"
       },
       {
-        "src": "8puzzle/4.jpg",
-        "desc": "Exibindo informações sobre o Aerodacytl."
+        "src": "pieta/003.jpg",
+        "desc": "Tela de Termos de Serviço"
       },
       {
-        "src": "8puzzle/2.jpg",
-        "desc": "É possível adicionar um pokémon para comparar com outro clicando no ícone <b>VS</b>."
+        "src": "pieta/004.jpg",
+        "desc": "Tela de escolha de planos"
+      },
+      {
+        "src": "pieta/005.jpg",
+        "desc": "Tela de pagamento com cartão de crédito"
+      },
+      {
+        "src": "pieta/006.jpg",
+        "desc": "Visão do administrador geral da plataforma"
+      },
+      {
+        "src": "pieta/007.jpg",
+        "desc": "Visão do administrador geral da plataforma - Planos de pagamento"
+      },
+      {
+        "src": "pieta/008.jpg",
+        "desc": "Visão do administrador geral da plataforma - Adicionar Gerente de Empresas"
+      },
+      {
+        "src": "pieta/009.jpg",
+        "desc": "Visão do administrador geral da plataforma - Agenda"
+      },
+      {
+        "src": "pieta/010.jpg",
+        "desc": "Visão do administrador geral da plataforma - Negociações inspirado Trello"
+      },
+      {
+        "src": "pieta/011.jpg",
+        "desc": "Visão de gerente de uma empresa que assina o CRM Pieta.tech"
       }
     ],
     "preview": {
-      "link": "https://apokedex-v2.netlify.app",
-      "notAvailable": ""
+      "link": "",
+      "notAvailable": "Não disponível"
     },
     "github": [
       {
-        "link": "https://github.com/guiialexandrino/pokedexv2",
-        "notAvailable": "",
+        "link": "",
+        "notAvailable": "Não disponível",
         "label": "Frontend"
       }
     ],
-    "stack": ["html", "js", "css"]
+    "stack": ["vue2", "vuetify"]
   },
 
   {
