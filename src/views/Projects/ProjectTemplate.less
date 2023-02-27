@@ -2,14 +2,16 @@
   .project-info {
     display: flex;
     justify-content: center;
+    word-break: break-word;
     margin-bottom: 30px;
+    width: 100%;
 
     .info {
       line-height: 1.4rem;
       max-width: 1000px;
 
       #description {
-        margin: 40px 0;
+        margin: 40px 0px;
         transform: scale(1.1);
       }
 
@@ -59,6 +61,18 @@
       bottom: 80px;
       right: 40px;
       transform: scale(2) !important;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .project-content {
+    .project-info {
+      .info {
+        #description {
+          transform: scale(1);
+        }
+      }
     }
   }
 }
