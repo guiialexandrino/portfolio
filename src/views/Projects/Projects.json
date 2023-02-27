@@ -275,40 +275,64 @@
     "name": "Polvo",
     "desc": "Frontend para um sistema de alunos e professores da ESAG.",
     "thumb": "PolvoThumb.png",
-    "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status.<br/>O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
+    "fullDesc": "Esse foi meu <b>primeiro projeto executado</b>, eu era estagiário e fazia alguns meses que tinha começado a aprender VueJS. Foi um projeto <b>bem extenso</b>, no começo a equipe era composta por vários frontends e cada era responsável por uma parte. Durante a pandemia acabou que os outros frontends da equipe sairam e só eu continuei, então <b>tive que tomar conta de todo projeto</b>. Resultado refiz toda a parte feita pelos outro integrante deixando do meu jeito e padronizando várias coisas que estavam diferentes.<p>O projeto POLVO se trata de uma plataforma conhecido como AVA, ou seja, Ambiente Virtual de Aprendizagem, com proposta parecida ao Moodle, que é amplamente utilizado em várias universidades. Já existe uma versão antiga do Polvo, rodando para os alunos da ESAG da Universidade Estadual de Santa Catarina. <b>Esse projeto do qual participei se trata da atualização de interface e funcionalidades.</b> O Polvo possuis funcões como: drive; mala direta; gerenciamento de: usuários, entidades, papéis; realização de provas; postagem de trabalhos colaborativos; postagem de material de apoio, entre outras.</p>",
     "images": [
       {
-        "src": "pokedex/1.png",
-        "desc": "Ao passar o mouse <b>sobre os cards</b> adquirem a cor do elemento primário do pokémon."
+        "src": "polvo/0001.jpg",
+        "desc": "Tela de Login"
       },
       {
-        "src": "pokedex/3.png",
-        "desc": "Ao clicar no card será exibido as informações sobre o pokémon."
+        "src": "polvo/0002.jpg",
+        "desc": "Visão de administrador do Sistema - Tela do seu DRIVE"
       },
       {
-        "src": "pokedex/4.png",
-        "desc": "Exibindo informações sobre o Aerodacytl."
+        "src": "polvo/0003.jpg",
+        "desc": "Visão de administrador do Sistema - Gerenciar Entidades do Sistema"
       },
       {
-        "src": "pokedex/2.png",
-        "desc": "É possível adicionar um pokémon para comparar com outro clicando no ícone <b>VS</b>."
+        "src": "polvo/0004.jpg",
+        "desc": "Visão de administrador do Sistema - Tela de gerenciamento de usuários"
       },
       {
-        "src": "pokedex/5.png",
-        "desc": "VsMode entre <b>Aerodactyl x Snorlax</b>"
+        "src": "polvo/0005.jpg",
+        "desc": "Visão do professor - Tela de Material de Apoio"
+      },
+      {
+        "src": "polvo/0006.jpg",
+        "desc": "Visão do professor - Tela de Trabalho Colaborativo"
+      },
+      {
+        "src": "polvo/0007.jpg",
+        "desc": "Visão do professor - Tela de Avaliações"
+      },
+      {
+        "src": "polvo/0008.jpg",
+        "desc": "Visão do professor - Tela de visualização das avaliações submetidas"
+      },
+      {
+        "src": "polvo/0009.jpg",
+        "desc": "Visão do aluno - Realizando prova"
+      },
+      {
+        "src": "polvo/0010.jpg",
+        "desc": "Visão do aluno - Mala Direta (Mensagens)"
+      },
+      {
+        "src": "polvo/0011.jpg",
+        "desc": "Visão do aluno - Enviando nova mensagem via Mala Direta"
       }
     ],
     "preview": {
-      "link": "https://apokedex-v2.netlify.app",
+      "link": "https://youtu.be/WI02lbIfatM",
       "notAvailable": ""
     },
     "github": [
       {
-        "link": "https://github.com/guiialexandrino/pokedexv2",
-        "notAvailable": "",
+        "link": "",
+        "notAvailable": "Não disponível",
         "label": "Frontend"
       }
     ],
-    "stack": ["html", "js", "css"]
+    "stack": ["vue2", "vuetify"]
   }
 ]
