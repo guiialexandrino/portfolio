@@ -4,7 +4,7 @@
     "name": "Agenda App",
     "thumb": "AgendaThumb.png",
     "desc": "Frontend + Backend para uma agenda de contatos.",
-    "fullDesc": "Nesse projeto <b>ataquei de fullstack</b> e criei um backend + frontend para uma aplicação de contatos/agenda, onde é possível realizar o registro de novos usuários, os usuários podem realizar gerenciar seus contatos, realizar upload do seu avatar e pedir recuperação de senha por email.<p>Para <b>desenvolver o backend</b> utilizei a stack: Express, JWT Token (para autenticação), BCript (criptografia), NodeMailer (envio de email), Speakeasy (autenticação dois fatores), JOI (verificação de dados enviados), Multer (upload de arquivos) e Mongoose. Por fim o backend foi colocado para rodar em um servidor da AWS, configurado via Docker.</p><p>Para <b>desenvolver o frontend</b> utilizei VueJS 3, utilizando Composition API. Todo o layout da aplicação foi desenvolvido por mim, optei por não utilizar nenhuma biblioteca externa de interface/css, ou seja, tudo foi feito na mão.</p>",
+    "fullDesc": "Nesse projeto <b>ataquei de fullstack</b> e criei um backend + frontend para uma aplicação de contatos/agenda, onde é possível realizar o registro de novos usuários, os usuários podem gerenciar seus contatos, realizar upload do seu avatar e pedir recuperação de senha por email.<p>Para <b>desenvolver o backend</b> utilizei a stack: Express, JWT Token (para autenticação), BCript (criptografia), NodeMailer (envio de email), Speakeasy (autenticação dois fatores), JOI (verificação de dados enviados), Multer (upload de arquivos) e Mongoose. Por fim o backend foi colocado para rodar em um servidor da AWS, configurado via Docker.</p><p>Para <b>desenvolver o frontend</b> utilizei VueJS 3, utilizando Composition API. Todo o layout da aplicação foi desenvolvido por mim, optei por não utilizar nenhuma biblioteca externa de interface/css, ou seja, tudo foi feito na mão.</p>",
     "images": [
       {
         "src": "agenda/0001.jpg",
@@ -109,41 +109,61 @@
     "name": "FCEE",
     "desc": "Frontend para um sistema de solicitações dos funcionários.",
     "thumb": "FceeThumb.png",
-    "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://pokeapi.co/' target='_blank'>POKE API</a>, ele consiste em uma pokédex para os 151 pokémons.<br/>Nesse projeto é possível observar as características e os status de cada pokémon, além de trazer uma funcionalidade diferente: a <b>VsMode</b>, no qual, é possível comparar os status de dois pokémons e observar qual pokémon foi mais vitorioso na disputa de status.<br/>O projeto foi construindo sem a utilização de nenhum framework, ou seja, <b>HTML + JavaScript + CSS  puro.</b>",
+    "fullDesc": "Realizei o <b>frontend</b> desse projeto solicitado pela <b>Fundação Catarinense de Educação Especial.</b> O Layout foi idealizado por mim, conforme a comunicação visual já existente dentro das outras plataformas/sites da FCEE. A aplicação consiste em um sistema de solicitação de serviços junto a administração e setores dentro da instituição. <p>O objetivo desse sistema é informatizar/agilizar os processos de solicitações dentro da instituição, tendo como diferencial a geração de relatórios sobre as solicitações realizadas. O sistema conta com 9 papéis + administrador global - cada um com suas peculiaridades na forma de visualizar e utilização da plataforma.</p>",
     "images": [
       {
-        "src": "pokedex/1.png",
-        "desc": "Ao passar o mouse <b>sobre os cards</b> adquirem a cor do elemento primário do pokémon."
+        "src": "fcee/0001.jpg",
+        "desc": "Tela de Login"
       },
       {
-        "src": "pokedex/3.png",
-        "desc": "Ao clicar no card será exibido as informações sobre o pokémon."
+        "src": "fcee/0002.jpg",
+        "desc": "Visão de administrador do Sistema"
       },
       {
-        "src": "pokedex/4.png",
-        "desc": "Exibindo informações sobre o Aerodacytl."
+        "src": "fcee/0003.jpg",
+        "desc": "Visão de administrador do Sistema - Tela de gerenciamento de usuários"
       },
       {
-        "src": "pokedex/2.png",
-        "desc": "É possível adicionar um pokémon para comparar com outro clicando no ícone <b>VS</b>."
+        "src": "fcee/0004.jpg",
+        "desc": "Visão de administrador do Sistema - Tela de importar usuários"
       },
       {
-        "src": "pokedex/5.png",
-        "desc": "VsMode entre <b>Aerodactyl x Snorlax</b>"
+        "src": "fcee/0005.jpg",
+        "desc": "Visão de administrador do Sistema - Tela de Relatórios de Solicitações"
+      },
+      {
+        "src": "fcee/0006.jpg",
+        "desc": "Visão de funcionário comum - 9 tipos de solicitações possíveis"
+      },
+      {
+        "src": "fcee/0007.jpg",
+        "desc": "Visão de funcionário comum - Tela Minhas Solicitações"
+      },
+      {
+        "src": "fcee/0008.jpg",
+        "desc": "Visão de funcionário comum - Tela Solicitação de Material de Consumo"
+      },
+      {
+        "src": "fcee/0009.jpg",
+        "desc": "Visão de responsável pelos Materiais de Consumo - Solicitações Pendentes"
+      },
+      {
+        "src": "fcee/0010.jpg",
+        "desc": "Visão de responsável pelos Materiais de Consumo - Gerenciar Materiais Disponíveis"
       }
     ],
     "preview": {
-      "link": "https://apokedex-v2.netlify.app",
+      "link": "https://youtu.be/EjN8liNvCjI",
       "notAvailable": ""
     },
     "github": [
       {
-        "link": "https://github.com/guiialexandrino/pokedexv2",
-        "notAvailable": "",
+        "link": "",
+        "notAvailable": "Não disponível",
         "label": "Frontend"
       }
     ],
-    "stack": ["html", "js", "css"]
+    "stack": ["vue2", "vuetify", "js", "css"]
   },
 
   {
