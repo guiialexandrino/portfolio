@@ -7,23 +7,23 @@
     "fullDesc": "Esse projeto foi construindo consumindo a <a href='https://rickandmortyapi.com/' target='_blank'>Rick and Morty API</a>, ele consiste em em <b>exibir a informação de todos personagens</b> que já apareceram no desenho ao longo das 6 temporadas. É possível realizar busca pelo nome, buscar por letra que começa o nome do personagem, além de poder navegar entre as páginas e ver o avatar de cada personagem. O projeto foi construindo com a <b>utilização do Quasar - uma biblioteca UI disponível para Vue.js</b>, além de ter sido desenvolvido em <b>Typescript e utilizando a Composition API.</b>",
     "images": [
       {
-        "src": "rickandmorty/0001.jpg",
+        "src": "rickandmorty/002.jpg",
         "desc": "Tela principal da aplicação"
       },
       {
-        "src": "rickandmorty/0002.jpg",
+        "src": "rickandmorty/003.jpg",
         "desc": "Tela principal mostra 15 personagens por página"
       },
       {
-        "src": "rickandmorty/0003.jpg",
+        "src": "rickandmorty/004.jpg",
         "desc": "É possível fazer a busca pelo nome dos personagens"
       },
       {
-        "src": "rickandmorty/0004.jpg",
+        "src": "rickandmorty/005.jpg",
         "desc": "Também é possível filtrar por letra os personagens"
       },
       {
-        "src": "rickandmorty/0005.jpg",
+        "src": "rickandmorty/001.jpg",
         "desc": "Exibe os detalhes do personagem selecionado!"
       }
     ],
