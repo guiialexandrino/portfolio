@@ -14,7 +14,7 @@
           :style="`background-image: url(${getImage(icon)})`"
         ></div>
       </div>
-      <span>Última atualização: 26/02/2023.</span>
+      <span>Última atualização: 07/03/2023.</span>
     </div>
   </footer>
 </template>
